@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "PDF Creator";
+}
+<script src="~/ckeditor/ckeditor.js"></script>
+<div class="row">
+    <div class="col-md-12">
+        <h2>Create a PDF File</h2>
+        <form method="post">
+            <textarea name="editor1" id="editor1" rows="80" cols="80">
+                Start creating your PDF document.
+            </textarea>
+            <br />
+            <input type="submit" class="btn btn-success" value="Generate PDF" />
+            <script>
+                // Replace the <textarea id="editor1"> with a CKEditor
+                // instance, using default configuration.
+                CKEDITOR.replace('editor1');
+            </script>
+        </form>
+    </div>
+</div>
